@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ByteSize
+
+## Overview
+
+ByteSize is a powerful media optimization tool that lets users resize images and compress videos seamlessly. Built with cutting-edge technologies like Next.js, Prisma, Tailwind CSS, Cloudinary AI, and Clerk, it delivers fast, efficient, and high-quality transformations for web and mobile use.
+
+## Features
+
+- **Image Resizing:** Resize images to various aspect ratios and resolutions.
+- **AI-Powered Compression:** Reduce video sizes without sacrificing quality.
+- **Download Videos on the Go:** Access and download media uploaded by other users.
+- **Cloud Storage:** All media is processed and stored securely using Cloudinary.
+- **Real-Time Preview:** See changes before downloading.
+
+## Tech Stack
+
+- **Frontend:** Next.js, Tailwind CSS, daisyUI, lucide-react
+- **Backend:** Next.js API routes, Prisma ORM
+- **Database:** NeonDB (serverless PostgreSQL)
+- **Storage and Processing:** Cloudinary AI
 
 ## Getting Started
 
-First, run the development server:
+To set up the project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/bytesize.git
+   cd bytesize
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up environment variables:
+   Create a `.env.local` and `.env` file in the root directory and add the necessary API keys and database credentials. Refer `sample.env` and `sample.env.local`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+   The app will be available at `http://localhost:3000/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ByteSize is deployed using Vercel for frontend and API hosting. Cloudinary handles media storage and processing, while NeonDB is used for the database. To deploy your own version:
 
-## Learn More
+1. Set up a Vercel account and link the repository.
+2. Configure environment variables in the Vercel dashboard.
+3. Deploy the project with a single click or via the Vercel CLI:
+   ```sh
+   vercel
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Upload an image or video.
+- Choose resizing or compression options.
+- Preview the changes in real-time.
+- Download the optimized media file.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! If you'd like to improve ByteSize, follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the repository.
+2. Create a new branch:
+   ```sh
+   git checkout -b feature-branch-name
+   ```
+3. Make your changes and commit them:
+   ```sh
+   git commit -m "Add new feature"
+   ```
+4. Push to your forked repository:
+   ```sh
+   git push origin feature-branch-name
+   ```
+5. Create a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Work in Progress
+
+ByteSize is actively being improved. Upcoming features include:
+
+- Enhanced AI-powered optimizations.
+- Batch processing for multiple files.
+- User analytics for tracking media usage.
+
+## License
+
+This project is free to be used for educational purposes.
+
+---
+
+Happy Coding!
